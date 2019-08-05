@@ -1,0 +1,31 @@
+.process {
+    background-color: rgba(250, 250, 250, 1);
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.process_pid {
+    width: 80%;
+    font-size: 18px;
+    font-weight: bolder;
+    display: block;
+    float: left;
+}
+
+.process_icon {
+    display: block;
+    float: right;
+}
+
+.process_data {
+    width: 100%;
+    float: left;
+    color: gray;
+    font-size: 14.5px;
+}

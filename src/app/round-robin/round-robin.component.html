@@ -1,0 +1,16 @@
+<section class="content-header text-center">
+    <h1>
+        <b>Round-Robin Algorithm</b>
+    </h1>
+</section>
+
+<section class="content queues">
+    <div class="row">
+        <sch-memory class="col-sm-2 col-xs-12 col-sm-offset-0 queue"></sch-memory>
+        <sch-cpu-rr class="col-sm-2 col-xs-12 col-sm-offset-1 queue"
+            (finishProcess)="terminated.finishScheduling($event)" (waitingProcess)="wait.waitProcess($event)">
+        </sch-cpu-rr>
+        <sch-wait class="col-sm-2 col-xs-12 col-sm-offset-1 queue" #wait></sch-wait>
+        <sch-terminated class="col-sm-2 col-xs-12 col-sm-offset-1 queue" #terminated></sch-terminated>
+    </div>
+</section>

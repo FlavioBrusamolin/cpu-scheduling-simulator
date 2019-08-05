@@ -1,0 +1,14 @@
+<section class="content-header text-center">
+    <h1>
+        <b>FCFS Algorithm</b>
+    </h1>
+</section>
+
+<section class="content">
+    <div class="row">
+        <sch-memory class="col-sm-2 col-xs-12 col-sm-offset-2 queue"></sch-memory>
+        <sch-cpu-fcfs class="col-sm-2 col-xs-12 col-sm-offset-1 queue"
+            (finishProcess)="terminated.finishScheduling($event)"></sch-cpu-fcfs>
+        <sch-terminated class="col-sm-2 col-xs-12 col-sm-offset-1 queue" #terminated></sch-terminated>
+    </div>
+</section>

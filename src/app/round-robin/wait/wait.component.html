@@ -1,0 +1,13 @@
+<section class="content-header text-center">
+  <h3 style="font-size: 21px;">
+      Waiting Processes
+  </h3>
+</section>
+
+<section class="content" style="border: 1px solid rgba(43, 46, 103, 1); border-radius: 5px;">
+  <div class="row">
+      <div *ngFor="let waitingProcess of waitingProcesses" class="col-sm-12 col-xs-12">
+          <sch-process [process]=waitingProcess></sch-process>
+      </div>
+  </div>
+</section>

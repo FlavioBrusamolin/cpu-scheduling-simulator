@@ -1,0 +1,16 @@
+<section class="content-header text-center">
+    <h3 style="font-size: 21px;">
+        Memory
+    </h3>
+</section>
+
+<section class="content" style="border: 1px solid rgba(43, 46, 103, 1); border-radius: 5px; margin-bottom: 10px;">
+    <div class="row">
+        <div *ngFor="let newProcess of newProcesses" class="col-sm-12 col-xs-12">
+            <sch-process [process]=newProcess></sch-process>
+        </div>
+    </div>
+</section>
+<div class="text-center">
+    <button (click)="newProcess()" class="btn btn-success"><i class="fa fa-plus-circle"></i> New Process</button>
+</div>
